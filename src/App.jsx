@@ -10,7 +10,6 @@ const App = () => {
   const connectWithMetamask = useMetamask();
   console.log("👋 Address:", address);
 
-
     // Initialize our editionDrop contract
   const editionDrop = useEditionDrop("0xBc1A3561bEbf63e47BB1bD510aADd47e48853168");
 
@@ -181,17 +180,6 @@ const App = () => {
     }
   };
 
-  if (network?.[0].data.chain.id !== ChainId.Rinkeby) {
-  return (
-    <div className="unsupported-network">
-      <h2>Please connect to Rinkeby</h2>
-      <p>
-        This dapp only works on the Rinkeby network, please switch networks
-        in your connected wallet.
-      </p>
-    </div>
-  );
-  }
 
   // ... include all your other code that was already there below.
 
