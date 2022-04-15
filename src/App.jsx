@@ -10,6 +10,7 @@ const App = () => {
   const connectWithMetamask = useMetamask();
   console.log("👋 Address:", address);
 
+
     // Initialize our editionDrop contract
   const editionDrop = useEditionDrop("0xBc1A3561bEbf63e47BB1bD510aADd47e48853168");
 
